@@ -4,6 +4,7 @@ import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
+import { TitleComponent } from './title/title.component';
 
 
 
@@ -12,7 +13,8 @@ import { AppRoutingModule } from './/app-routing.module';
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    TitleComponent
   ],
   imports: [
     BrowserModule, NgbModule.forRoot(), AppRoutingModule
