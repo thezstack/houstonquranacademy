@@ -2,10 +2,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './/app-routing.module';
 import { TitleComponent } from './title/title.component';
-
+import { HttpClientModule } from '@angular/common/http';
+import { SliderComponent } from './slider/slider.component';
+import { TabsComponent } from './tabs/tabs.component';
+import { BlogComponent } from './blog/blog.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -14,10 +17,16 @@ import { TitleComponent } from './title/title.component';
   declarations: [
     AppComponent,
     NavComponent,
-    TitleComponent
+    TitleComponent,
+    SliderComponent,
+    TabsComponent,
+    BlogComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule, NgbModule.forRoot(), AppRoutingModule
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

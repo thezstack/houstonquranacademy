@@ -1,56 +1,71 @@
-a {
-    color:#27408b;
-}
-a:active{
-    color:black;
+
+.logo-font{
+    font-family: 'Crimson Text', serif;
+    color:white;
 }
 
-@media only screen and (max-width:950px){
-.btn {
-    display: inline-block;
-    font-weight: 400;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    border: 1px solid transparent;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-.btn-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-    background-color: transparent;
-    border-color: transparent;
+.background-color{
+    background-color: #17345B;
+  
+    /* box-shadow: 0 0 10px rgba(0,0,0,.15),0 3px 3px rgba(0,0,0,.15); */
 }
 
-.btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 .2rem rgba(0,123,255,.25);
+nav > div > ul > li > a{
+    color:white;
 }
-.btn:not(:disabled):not(.disabled) {
-    cursor: pointer;
+
+button > svg {
+    color:white;
 }
+
+nav {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.808);
+    z-index: 2000;
 }
-@media only screen and (min-width:1000px){
-    form {
-        display:none;
+
+
+#navbar {
+    overflow: hidden;
+    
+  }
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    background-color:rgba(255, 255, 255, 0.9);
+    z-index: 1000;
+  }
+
+@media only screen and (max-width: 992px) {
+    .desktop-nav{
+        display: none;
+        background-color: rgba(255, 255, 255, 0.884);
+      
     }
-    button {
+ 
+    .desktop-form{
         display: none;
     }
-    .menu-text {
+  
+}
+@media only screen and (min-width: 992px) {
+    svg {
         display: none;
     }
-
+    nav > div > ul {
+        display: none;
+    }
+  
+    ul {
+        display:flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-evenly;
+         }
+         .mobile-form{
+             display:none;
+         }
 }
