@@ -3,14 +3,8 @@ h1,h2,h3 {
     color:white;
 }
 
-h2 {
-    text-align: center;
-    
-}
-
 p {
     color:white;
-    text-align: center;
 }
 footer {
     background-color: #17345B;
@@ -19,4 +13,22 @@ footer {
 section {
     background-color: rgb(49, 49, 49);
     padding:20px;
+}
+
+
+@media only screen and (min-width: 992px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+    
+h2 {
+    text-align: center;
+    
+}
+
+p {
+   
+    text-align: center;
+}
 }
