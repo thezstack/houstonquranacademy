@@ -1,5 +1,5 @@
 section {
-    background-color: #f9f6ef;
+    background-color: #ecf2fa;
     padding-top: 50px;
     padding-bottom: 200px;
 }
@@ -10,9 +10,14 @@ h1 {
     text-align: center;
 }
 
-p {
-    text-align: center;
+h2 {
+    font-weight: 600;
+    
+
+    font-family: 'Source Serif Pro', serif;
+
 }
+
 
 div.card {
     box-shadow: 0 0 10px rgba(0,0,0,.15), 0 3px 3px rgba(0,0,0,.15);

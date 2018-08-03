@@ -4,10 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "serve",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "now-build": "echo 'Built Locally'",
+    "now-start": "serve ./dist --single"
   },
   "private": true,
   "dependencies": {
@@ -22,7 +24,7 @@
     "@angular/router": "^6.0.0",
     "core-js": "^2.5.4",
     "rxjs": "^6.0.0",
-    "serve": "^9.1.0",
+    "serve": "^9.4.0",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

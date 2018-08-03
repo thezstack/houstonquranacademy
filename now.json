@@ -1,0 +1,13 @@
+{
+
+    "type": "static",
+    "files": ["package.json",
+        "yarn.lock",
+        "dist"],
+    "static": {
+   
+      "public": "/dist"
+   
+    }
+   
+   }
